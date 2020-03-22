@@ -2,7 +2,7 @@ def call(Map pipelineParams){
   pipeline{
       agent any
       environment{
-        applicationName = pipelineParams.appName
+        applicationName = pipelineParams.pername
       }
       stages{
           stage("Build"){
