@@ -1,8 +1,8 @@
 def call(Map pipelineParams){
   pipeline{
       agent any
-      environment{
-        applicationName = pipelineParams.pername
+      environment {
+        applicationName = "${pipelineParams.pername}"
       }
       stages{
           stage("Build"){
